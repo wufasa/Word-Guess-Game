@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman!</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!--    java script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+  <div class="jumbotron">
+    
+    <h2 class="text-center">Press any key to get started! 
+        Click on this button to reset the game! </h2>
+
+    <div class="text-center">
+
+      <button id="start-button" class="btn btn-primary btn-lg"><h1><span class="fa fa-question"></span></h1></button>
+      
+    </div>
+      
+  </div>
+<h1>Guess the fruit!</h1>
+  <h1 class="text-center" id="letterspace"></h1>
+    <h1>Wrong Letters</h1>
+    <h1 class="text-center" id="wrongletters"></h1>
+    <h1>Guesses left: <span id="death">7</span></h1>
+    <h1>Wins: <span id="wins">0</span></h1>
+  
+</body>
+</html>
