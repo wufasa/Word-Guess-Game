@@ -39,7 +39,6 @@ document.onkeyup = function(key){
     var guess = key.key;
     guess = guess.toLowerCase();
     if (genWord.indexOf(guess) == -1 && pressedKeys.indexOf(guess) == -1){
-        console.log("no");
         pressedKeys.push(guess);
         //append pressed key to guess box
         var letter = $("<d-inline-block>");
@@ -53,6 +52,7 @@ document.onkeyup = function(key){
             genWord = gen();
             set();
             deathcounter = 7;
+            pressedKeys = [];
             $("#death").text(deathcounter);
         }
     }
@@ -81,6 +81,7 @@ document.onkeyup = function(key){
             reset();
             set();
             deathcounter = 7;
+            pressedKeys = [];
             $("#death").text(deathcounter);
         }
         //increment a win counter
@@ -117,6 +118,7 @@ function win(){
 function reset(){
     $("#letterspace").empty();
     $("#wrongletters").empty();
+    
 }
 
 
